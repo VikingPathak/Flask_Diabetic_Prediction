@@ -1,0 +1,83 @@
+{%extends "base.html" %}
+{%block content%}
+
+<section class="hero">
+    <div class="hero-body">
+        <p class="title">
+            Diabetic Prediction System
+        </p>
+    </div>
+    <hr>
+
+    <div class="container">
+        <div class="card">
+            <div class="card-content">
+                <div class="media">
+                    <div class="media-content">
+                        <p class="title is-4">Enter following Values to predict if you are Diabetics.</p>
+                    </div>
+                </div>
+                <div class="content">
+                    <div class="container my-5 mx-5 px-5">
+                        <form action="{{ url_for('predict')}}" method="post">
+                            <div class="field">
+                                <label for="noofpregnancies" class="label is-size-4 has-text-weight-light">
+                                    No of Pregnancies:
+                                </label>
+                                <input type="text" name="noofpregnancies" id="noofpregnancies" class="input" autofocus>
+                            </div>
+                            <div class="field">
+                                <label for="glucose" class="label is-size-4 has-text-weight-light">
+                                    Glucose(mg/dL):
+                                </label>
+                                <input type="text" name="glucose" id="glucose" class="input" autofocus>
+                            </div>
+                            <div class="field">
+                                <label for="bloodpressure" class="label is-size-4 has-text-weight-light">
+                                    Blood Pressure(mmHg):
+                                </label>
+                                <input type="text" name="bloodpressure" id="bloodpressure" class="input" autofocus>
+                            </div>
+                            <div class="field">
+                                <label for="skinthickness" class="label is-size-4 has-text-weight-light">
+                                    Skin Thickness(mm):
+                                </label>
+                                <input type="text" name="skinthickness" id="skinthickness" class="input" autofocus>
+                            </div>
+                            <div class="field">
+                                <label for="insulinlevel" class="label is-size-4 has-text-weight-light">
+                                    Insulin level(IU/mL):
+                                </label>
+                                <input type="text" name="insulinlevel" id="insulinlevel" class="input" autofocus>
+                            </div>
+                            <div class="field">
+                                <label for="bmi" class="label is-size-4 has-text-weight-light">
+                                    Body Mass Index(kg/m<sup>2</sup>):
+                                </label>
+                                <input type="text" name="bmi" id="bmi" class="input" autofocus>
+                            </div>
+                            <div class="field">
+                                <label for="diabetiespredictionfunction" class="label is-size-4 has-text-weight-light">
+                                    Diabeties Pedigree Function:
+                                </label>
+                                <input type="text" name="diabetiespredictionfunction" id="diabetiespredictionfunction"
+                                    class="input" autofocus>
+                            </div>
+                            <div class="field">
+                                <label for="age" class="label is-size-4 has-text-weight-light">
+                                    Age:
+                                </label>
+                                <input type="text" name="age" id="age" class="input" autofocus>
+                            </div>
+                            <button type="submit" class="button is-success is-size-5">Predict</button>
+                        </form>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+</section>
+
+{% endblock %}
