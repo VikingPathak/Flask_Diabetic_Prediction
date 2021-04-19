@@ -5,3 +5,5 @@ The Flask Web App helps to predict if a person is diabetic based on the fields p
 2. Run `python main.py`
 3. Go to `localhost:5000` on a web browser
 4. Provide demo values for the inputs and hit `Predict` button
+
+# [LINK TO FLASK APP DEMO](https://flask-diabetic-prediction.herokuapp.com/)
