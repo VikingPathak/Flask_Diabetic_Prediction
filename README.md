@@ -7,3 +7,6 @@ The Flask Web App helps to predict if a person is diabetic based on the fields p
 4. Provide demo values for the inputs and hit `Predict` button
 
 # [LINK TO FLASK APP DEMO](https://flask-diabetic-prediction.herokuapp.com/)
+
+# Screenshot
+![image](https://user-images.githubusercontent.com/55128822/120898978-f7ab2480-c64a-11eb-9096-c72115ebed16.png)
